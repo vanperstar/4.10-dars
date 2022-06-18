@@ -11,6 +11,10 @@ body{
     width: 23%;
 }
 
+.movie-img{
+    height: 40vh !important;
+}
+
 .modal{
     width: 100%;
     height: 100vh;
