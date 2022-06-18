@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/img/logo.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-dars</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row mt-3">
+            <form class="col-6 gap-1  search-form d-flex">
+                <input class="form-control search-input" type="text" value="Hulk" placeholder="Search ...">
+                <select id="" class="form-select movie-type-select">
+                    <option value="no-select" selected disabled>-- Select genre --</option>
+                    <option value="Series">Series</option>
+                    <option value="Movie">Movie</option>
+                    <option value="Episode">Episode</option>
+                </select>
+                <button class="btn btn-info ms-3" type="submit">Search</button>
+            </form>
+            <div class="col-1">
+                <span class="text-white">Results:<span class="results">0</span></span>
+            </div>
+            <!-- <select class="col-2">
+                <option value="O'sish">O'sish</option>
+                <option value="Kamayish">Kamayish</option>
+            </select>
+            <select class="col-2 ms-4">
+                <option value="Id bo'yicha">Id bo'yicha</option>
+                <option value="Nomi bo'ych">Nomi bo'yicha</option>
+                <option value="Yili bo'yich">Yili bo'yicha</option>
+            </select> -->
+
+            
+        </div>
+        <div class="row mt-3">
+            <div class="col-2">
+            </div>
+            <div class="col-10 p-3 w-100">
+                <div class="row movies">
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <ul class="pagination">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="modal">
+        <div class="modal-content">
+
+        </div>
+    </div>
+
+    <template id="pagination-item">
+        <li class="page-item">
+            <a class="page-link" href="#">1</a>
+        </li>
+    </template>
+
+    <template id="modal-templet">
+        <img class="modal-img " src="" alt="">
+        <div class="card-body modal-card">
+            <h5 class="card-title modal-title">Card title</h5>
+            <p class="card-text modal-description"></p>
+            <p class="card-text modal-type"></p>
+            <button class="btn btn-dark modal-close" type="reset">Close</button>
+        </div>
+    </template>
+
+
+    <template id="loader">
+        <div class="col justify-content-center align-items-center d-flex">
+            <img width="200" height="200" src="./img/Spinner-0.6s-270px.gif" alt="">
+        </div>
+    </template>
+
+
+    <template id="movie-item">
+        <div class="col-1 films">
+            <div class="card bg-dark" style="width: 18rem;">
+                <img class="card-img-top movie-img h-50" src="http://picsum.photos/200/200" alt="Card image cap">
+                <div class="card-body text-white">
+                  <h5 class="card-title movie-title">Card title</h5>
+                  <p class="card-text movie-description"></p>
+                  <p class="card-text movie-type"></p>
+                  <button type="button" class="btn btn-outline-info more-info">More info</button>
+                  <button type="button" class="btn btn-outline-success ms-4">Boomark</button>
+                  <!-- <button href="#" class="btn btn-danger delete mt-3">Remove</button> -->
+                </div>
+              </div>
+        </div>
+    </template>
+    <script src="./js/utilis.js"></script>
+    <!-- <script src="./js/loader.js"></script> -->
+    <script src="./js/https.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
