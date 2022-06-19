@@ -7,12 +7,32 @@ body{
     background-color: black;
 }
 
+.movie{
+    margin-top: 10%;
+}
+
+.navbar{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 20;
+}
+
 .films{
     width: 23%;
 }
 
 .movie-img{
     height: 40vh !important;
+}
+
+h5{
+    font-size: 28px;
+}
+
+.bookmark{
+    font-size: 15px;
 }
 
 .modal{

@@ -10,39 +10,58 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-
-    <div class="container">
-        <div class="row mt-3">
-            <form class="col-6 gap-1  search-form d-flex">
-                <input class="form-control search-input" type="text" value="Hulk" placeholder="Search ...">
-                <select id="" class="form-select movie-type-select">
-                    <option value="no-select" selected disabled>-- Select genre --</option>
-                    <option value="Series">Series</option>
-                    <option value="Movie">Movie</option>
-                    <option value="Episode">Episode</option>
-                </select>
-                <button class="btn btn-info ms-3" type="submit">Search</button>
-            </form>
-            <div class="col-1">
-                <span class="text-white">Results:<span class="results">0</span></span>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            </ul>
+            <div class="row mt-3">
+                <form class="col-9 gap-1  search-form d-flex">
+                    <input class="form-control search-input" type="text" value="Hulk" placeholder="Search ...">
+                    <select id="" class="form-select movie-type-select w-50 bg-dark text-white">
+                        <option value="no-select" selected disabled>Types</option>
+                        <option value="Movie">Movie</option>
+                        <option value="Series">Series</option>
+                        <option value="Episode">Episode</option>
+                    </select>
+                    <button class="btn btn-outline-info ms-3" type="submit">Search</button>
+                </form>
+                <div class="col-1">
+                    <span class="text-white">Results:<span class="results">0</span></span>
             </div>
-            <!-- <select class="col-2">
-                <option value="O'sish">O'sish</option>
-                <option value="Kamayish">Kamayish</option>
-            </select>
-            <select class="col-2 ms-4">
-                <option value="Id bo'yicha">Id bo'yicha</option>
-                <option value="Nomi bo'ych">Nomi bo'yicha</option>
-                <option value="Yili bo'yich">Yili bo'yicha</option>
-            </select> -->
-
-            
         </div>
-        <div class="row mt-3">
+        </div>
+    </nav>
+    <div class="container">    
+        
+        <div class="row movie">
             <div class="col-2">
             </div>
             <div class="col-10 p-3 w-100">
-                <div class="row movies g-3 gap-3">
+                <div class="row movies g-3 gap-3 col-12">
                     
                 </div>
             </div>
@@ -85,21 +104,24 @@
 
     <template id="loader">
         <div class="col justify-content-center align-items-center d-flex">
-            <img width="200" height="200" src="./img/Spinner-0.6s-270px.gif" alt="">
+            <!-- <img width="200" height="200" src="./img/Spinner-0.6s-270px.gif" alt=""> -->
+            <!-- <img width="200" height="200" src="./img/Double Ring-1s-200px.gif" alt=""> -->
+            <!-- <img width="200" height="200" src="./img/Bean Eater-1s-200px.gif" alt=""> -->
+            <img width="200" height="200" src="./img/Infinity-1s-200px.gif" alt="">
         </div>
     </template>
 
 
     <template id="movie-item">
         <div class="col-1 films">
-            <div class="card bg-dark" style="width: 18rem;">
+            <div class="card bg-black" style="width: 18rem;">
                 <img class="card-img-top movie-img h-50" src="http://picsum.photos/200/200" alt="Card image cap">
                 <div class="card-body text-white">
                   <h5 class="card-title movie-title">Card title</h5>
                   <p class="card-text movie-description"></p>
                   <p class="card-text movie-type"></p>
-                  <button type="button" class="btn btn-outline-info more-info">More info</button>
-                  <button type="button" class="btn btn-outline-success ms-4">Boomark</button>
+                  <button type="button" class="bookmark btn btn-outline-info more-info">More info</button>
+                  <button type="button" class="bookmark btn btn-outline-success ms-4">Boomark</button>
                   <!-- <button href="#" class="btn btn-danger delete mt-3">Remove</button> -->
                 </div>
               </div>
