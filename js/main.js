@@ -60,7 +60,7 @@ function createMovieEl(movie) {
     imgPosterEL.addEventListener('error', () => {
             imgPosterEL.src = 'http://picsum.photos/200/200';
         })
-    movieEl.querySelector(".movie-type").textContent = movie.Type
+    // movieEl.querySelector(".movie-type").textContent = movie.Type
     let moreInfoEL = movieEl.querySelector(".more-info")
     moreInfoEL.dataset.moreId = movie.imdbID
     moreInfoEL.dataset.task = "more-info"

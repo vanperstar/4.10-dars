@@ -8,7 +8,7 @@ body{
 }
 
 .movie{
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 .navbar{
@@ -20,19 +20,20 @@ body{
 }
 
 .films{
-    width: 23%;
+    width: 20%;
 }
 
 .movie-img{
     height: 40vh !important;
+    border-radius: 8px;
 }
 
-h5{
-    font-size: 28px;
+.movie-title{
+    font-size: 23px;
 }
 
 .bookmark{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .modal{
@@ -76,3 +77,12 @@ h5{
     font-size: 12px;
     margin-bottom: 20px;
 } */
+
+.slide{
+    margin-top: 8%;
+}
+
+.marvel_img{
+    border-radius: 10px;
+    height: 60vh;
+}

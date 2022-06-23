@@ -13,6 +13,17 @@ function renderModal(modal) {
     return contenEL    
 }
 
+function renderFilms(films = [], node){
+    movies.innerHTML = null;
+
+    films.forEach((movie) => {
+        let movieItemEL = cloneFilms(movie);
+        node.appendChild(movieItemEL)
+    })
+}
+
+
+
 
 // Render Pagination 
 
